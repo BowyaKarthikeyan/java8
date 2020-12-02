@@ -1,5 +1,7 @@
 package streamsLearning;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -14,7 +16,7 @@ public class practice1 {
 		driver.get("https://www.gap.com/");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.findElementByXPath("//button[@class='css-1qosac6']").click();
+		driver.findElementByXPath("//button[@class='css-1qosac6']").getText();
 		
 	}
 
